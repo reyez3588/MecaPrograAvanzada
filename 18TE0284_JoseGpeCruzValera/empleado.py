@@ -14,3 +14,12 @@ class Empleado():
     def entrevista(self):
         print("Hola, mi nombre es {} {} y tengo {} años".format(self.__nombre, self.__apellido, self.__edad))
         print("Mi salario es de {} y mi nivel de ingles es de {}".format(self.__salario, self.__nivel_ingles))
+
+    def celebracion(self, acuerdo=True):
+        if acuerdo == "si" or "Si" or "SI":
+            aceptacion = True
+        if aceptacion == True:
+            print("Estoy de acuerdo con el contrato, {} {}".format(self.__nombre, self.__apellido))
+        else:
+            print("Lo siento, {} {}".format(self.__nombre, self.__apellido))
+        print("Acepto el contratro")
