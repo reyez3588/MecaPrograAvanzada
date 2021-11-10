@@ -30,3 +30,9 @@ class boss:
 
     def vestimenta(self):
         print("mi vestimenta es", self.__vestimenta)
+
+    def contrato(self):
+        print("mi contrato es de", self.__pay, "euros")
+
+    def others(self):
+        pass
