@@ -1,7 +1,7 @@
 """realizare un programa de un jefe que pueda entrevistar a un empleado y conocer su nivel de ingles"""
-
 class boss:
-    def __init__(self, name:str , age: int, pay:float, ropa:str, nivel_ingles:int):
+    def __init__(self, name:str , age: int, pay:float, ropa:str, nivel_ingles:int, altura:float):
+        self,__altura = altura
         self.__name = str(name)
         self.__age = int(age)
         self.__pay = float(pay)
@@ -22,6 +22,12 @@ class boss:
 
     def get_name(self):
         return self.__name
+    def get_altura(self):
+        return self.__altura
+
+
+
+
 
     def saludo(self):
         print("hola soy el jefe, mi nombre es", self.__name, "y tengo", self.__age, "años")
