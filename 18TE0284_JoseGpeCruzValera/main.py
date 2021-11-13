@@ -1,4 +1,4 @@
-import jefe
+import Gerente
 import empleado as emp
 import wearing as ropa
 
@@ -14,7 +14,7 @@ def main():
     opcion = int(input("Introduzca una opción: "))
 
     if opcion == 1:
-        Jefe_empresa = jefe.boss("Rodrigo",43,25000,True)
+        Jefe_empresa = Gerente.boss("Rodrigo",43,25000,True)
 
 
 
