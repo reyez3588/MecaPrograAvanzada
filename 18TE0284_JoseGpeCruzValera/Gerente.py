@@ -26,7 +26,7 @@ class persona():
         print(" El señor ",self.__name,'Es una gran empresario, mide ',self.__altura,
         'de altura')
         print("Posee un porte formal por lo que se le recomienda")
-        print('Necesitara manejar ingles %s'%self.__nivel_ingles)
+        print('Necesitara manejar ingles de 85')
 
 class Gerente(persona):
     def __init__(self, name:str , age: int, pay:float, nivel_ingles:str = 'C1', altura:float=1.80):

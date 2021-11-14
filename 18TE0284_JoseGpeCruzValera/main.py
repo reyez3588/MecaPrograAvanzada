@@ -7,7 +7,8 @@ import Empresa as Company
 
 
 #creamos el objeto CEO -------------------------------------------------
-CEOdEmpresar = Ceo.Gerente(str(input('Nombre Apellido del empresario:\n')),45,39999.99,str(85),1.80)
+# CEOdEmpresar = Ceo.Gerente(str(input(" ingrese Nombre del empresario")),45,39999.99,(85),1.80)
+CEOdEmpresar = Ceo.Gerente('Jose Antonio Ponto',45,39999.99,(85),1.80)
 pantalonGerente = Clothes.pantalon("Gris",'Mediana 34','LV','Hombre')
 zapatosGerente = Clothes.zapatos("Negro","27","Flexi","Masculino")
 sacoGerente = Clothes.saco('Azul','Mediana 36','Rey Palomo','Hombre','Varias telas finas',3)
@@ -21,7 +22,7 @@ camisetaGerente = Clothes.camiseta('azul','Mediana 34','Lacoste')
 
 # crearemos al emmpleado -------------------------------------------------
 # vestiremos formalmente
-Entrevistado = emp.Empleado(str(input(" Ricardo ")),str(input("Escriba apellidos")),22,15000,str(85),1.70)
+Entrevistado = emp.Empleado(' Ibai Llanos',str(input("Escriba apellidos")),22,15000,(85),1.70)
 pantalonEntrevistado = Clothes.pantalon("Gris",'Mediana 32','Oxfort','Hombre')
 camisetaEntrevistado = Clothes.camiseta('Negra','Mediana 32','IDesign')
 zapatosEntrevistado = Clothes.zapatos("Negro","27","Flexi","Masculino")
@@ -44,7 +45,7 @@ def main():
     ¿Qué desea hacer?
     [1] conocer el jefe
     [2] verte al espejo
-    [3] conocer el número de empleados(password: 123)
+    [3] conocer empleados(password: 123)
     [4] conocer la empresa
     [5] Empresar la entrevista
     [6] Salir\n""")
@@ -82,6 +83,7 @@ def main():
             assets.descargar()
             Company.generar_archivo()
             time.sleep(3)
+            print('leyendo archivo, extrayecto nombres y puesto..')
             Company.listaconsulta()
             return main()
         else:
@@ -107,7 +109,7 @@ def main():
         exit()
 
         #----------------------------------------------------------------------------------------------------------------
-    else:
+    else str:
         print("\nEsa opción no existe")
         time.sleep(2)
         return main()
