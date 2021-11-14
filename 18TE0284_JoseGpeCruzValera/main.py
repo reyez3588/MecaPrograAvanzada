@@ -1,6 +1,6 @@
-import Gerente
+import Gerente as Ceo
 import empleado as emp
-import wearing as ropa
+import Vestimenta as Clothes
 
 
 def main():
@@ -14,9 +14,11 @@ def main():
     opcion = int(input("Introduzca una opción: "))
 
     if opcion == 1:
-        Jefe_empresa = Gerente.boss("Rodrigo",43,25000,True)
-
-
-
-
-
+        CEO = Ceo.Gerente('Jose',45,25000,True,85,1.8)
+        CEO.saludo()
+        CEO.verVestimenta()
+    try:
+        opcion = int(input("Introduzca una opción: "))
+    except ValueError:
+        print("Introduzca un número")
+main()

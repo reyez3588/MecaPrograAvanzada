@@ -27,5 +27,7 @@ class Empleado():
 
 #testeo de la clase
 #creamos una clase de empleado
-empleado = Empleado("Jose", "Gpe", 21, "300.000", "B1")
-empleado.entrevista()
+
+
+# empleado = Empleado("Jose", "Gpe", 21, "300.000", "B1")
+# empleado.entrevista()

@@ -30,7 +30,7 @@ class saco(ropa):
         self.__material = material
         self.__botones = botones
     def verSACO(self):
-        print("Saco color {} de talla {}, Marca: {}".format(self.__color, self.__talla, self.__marca))
+        print("Su Saco color {} de talla {}, Marca: {}".format(self.__color, self.__talla, self.__marca))
         print("Posee {} botone(s) su saco".format(self.__botones))
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
@@ -77,19 +77,19 @@ class zapatos(ropa):
         print("Zapatos de {} de {}".format(self.__color, self.__marca))
         print("Talla: {}".format(self.__talla))
 
-pantalonGerente = pantalon("Gris",'40','LV','Hombre')
-zapatosGerente = zapatos("Negros","27","Flexi","Masculino")
-sacoGerente = saco('Azul','Mediana','Rey Palomo','Hombre','Varias telas finas',3)
-camisetaGerente = camiseta('azul','Large','Lacoste')
+# pantalonGerente = pantalon("Gris",'40','LV','Hombre')
+# zapatosGerente = zapatos("Negros","27","Flexi","Masculino")
+# sacoGerente = saco('Azul','Mediana','Rey Palomo','Hombre','Varias telas finas',3)
+# camisetaGerente = camiseta('azul','Large','Lacoste')
 
-print()
-# camisetaGerente.getterInfo()
-camisetaGerente.verCAMISA()
-print()
-pantalonGerente.verPANTALON()
-print()
-sacoGerente.verSACO()
-print()
+# print()
+# # camisetaGerente.getterInfo()
+# camisetaGerente.verCAMISA()
+# print()
+# pantalonGerente.verPANTALON()
+# print()
+# sacoGerente.verSACO()
+# print()
 
 # pantalonGerente.getterInfo()
 # zapatosGerente.getterInfo()
