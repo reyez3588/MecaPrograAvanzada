@@ -1,17 +1,18 @@
 import time
 
 def cargando():
-    print('Cargando...')
-    x= 3
-    for i in range(x):
-        print("...")
-        time.sleep(1)
-    time.sleep(0.5)
+    if input('Cargando...' + '\n' + 'Presiona enter para continuar') == '':
+        print('\n')
+        x= 3
+        for i in range(x):
+            print("...")
+            time.sleep(1)
+        time.sleep(0.5)
     print(' 1 nueva notificacion')
 
 def cargando2():
     print("\nGracias por usar el programa")
-    print('Cerrando programa ⏱️')
+    print('Cerrando  ⏱️')
     x= 3
     for i in range(x):
         print("...",x-i)

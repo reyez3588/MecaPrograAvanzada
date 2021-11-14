@@ -19,6 +19,8 @@ camisetaGerente = Clothes.camiseta('azul','Mediana 34','Lacoste')
 # crearemos al emmpleado -------------------------------------------------
 # vestiremos formalmente
 Entrevistado = emp.Empleado(" Ricardo ",'Mendez Allende',22,15000,str(85),1.70)
+pantalonEntrevistado = Clothes.pantalon("Gris",'Mediana 32','Oxfort','Hombre')
+camisetaEntrevistado = Clothes.camiseta('Negra','Mediana 32','IDesign')
 
 #----------------------------------------------------------------------------------------------------------------
 
