@@ -1,6 +1,7 @@
 
 
 #archivos
+version = "1.0"
     #clases
         #jefe
         #empleado
@@ -9,4 +10,15 @@
 #main
 
 #nuevos cambios proximos
+#version 1.01
+    # clases
+    #     Assetstools
+    #     Empleado
+    #     Gerente
+    #     Vestimenta
+    # funciones principales
+    #     main
+
+
+#version 1.02
 
