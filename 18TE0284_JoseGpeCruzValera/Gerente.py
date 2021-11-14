@@ -1,7 +1,7 @@
 """realizare un programa de un jefe que pueda entrevistar a un empleado y conocer su nivel de ingles"""
 import Vestimenta as Clothes
 class persona():
-    def __init__(self, name:str , age: int, pay:float,nivel_ingles:str='A1', altura:float = 1.75):
+    def __init__(self, name:str , age: int, pay:float,nivel_ingles:str='A1', altura:float= 1.80):
         self.__altura = float(altura)
         self.__name = str(name)
         self.__age = int(age)

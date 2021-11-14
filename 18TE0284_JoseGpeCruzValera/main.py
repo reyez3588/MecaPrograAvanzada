@@ -2,6 +2,7 @@ import Gerente as Ceo
 import empleado as emp
 import Vestimenta as Clothes
 import time
+import assets
 
 
 
@@ -12,8 +13,11 @@ sacoGerente = Clothes.saco('Azul','Mediana 36','Rey Palomo','Hombre','Varias tel
 camisetaGerente = Clothes.camiseta('azul','Mediana 34','Lacoste')
 
 Secretaria = Ceo.persona('Maria Buena Aventura',25,1500.00,'b1',1.65)
-print(' Hola buenas tardes mi nombre es',Secretaria.get_name())
-Secretaria.get_invitacion()
+print(' Hola buenas tardes mi nombre es {} le acabo de enviar un correo de la empresa para su solicitud \
+    de empleo, en breves momentos le llegara...'.format(Secretaria.get_name()))
+assets.cargando()
+
+CEOdEmpresar.get_invitacion()
 
 
 
@@ -69,14 +73,7 @@ def main():
         return main()
         #----------------------------------------------------------------------------------------------------------------
     elif opcion == 6:
-        print("\nGracias por usar el programa")
-        print('Cerrando programa ⏱️')
-        print("\n3..")
-        time.sleep(0.5)
-        print("   2..")
-        time.sleep(0.75)
-        print("       1..")
-        time.sleep(0.75)
+        assets.cargando2()
         exit()
         #----------------------------------------------------------------------------------------------------------------
     else:
@@ -93,5 +90,8 @@ def main():
     #     print('Saliendo de programa')
     # finally:
     #     return main()
+
+
+
 
 main()
