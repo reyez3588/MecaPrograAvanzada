@@ -8,7 +8,7 @@ class persona():
         self.__pay = float(pay)
         self.__nivel_ingles = str(nivel_ingles)
     try:
-        print('ok')
+        print('Running...')
     except ValueError:
         print("error datos erroneos")
     except TypeError:
@@ -23,7 +23,7 @@ class persona():
         print("invitacion de entrevista de empleo")
         print('\n Correo recibido:\n'
         'Es de mi agrado informar que se ha agenda su cita con nuestro CEO')
-        print(" El señor ",self.__name,'Es una gran empresario, mide ',self.__altura,
+        print(" El señor ",Gerente.self.__name,'Es una gran empresario, mide ',self.__altura,
         'de altura')
         print("Posee un porte formal por lo que se le recomienda")
         print('Necesitara manejar ingles %s'%self.__nivel_ingles)
@@ -57,4 +57,6 @@ class Gerente(persona):
 
     def others(self):
         pass
+    def getAltura(self):
+        return self.__altura
 

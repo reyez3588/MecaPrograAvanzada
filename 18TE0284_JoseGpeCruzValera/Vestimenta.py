@@ -1,3 +1,5 @@
+import time
+
 """necesitamos empezar a modificar y crear la base del jefe"""
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
@@ -30,6 +32,8 @@ class saco(ropa):
         self.__material = material
         self.__botones = botones
     def verSACO(self):
+        print('Saco 🧥')
+        time.sleep(2.5)
         print("Su Saco color {} de talla {}, Marca: {}".format(self.__color, self.__talla, self.__marca))
         print("Posee {} botone(s) su saco       ".format(self.__botones))
 #------------------------------------------------------------------------------
@@ -45,6 +49,8 @@ class pantalon(ropa):
         self.__talla = talla
         self.__marca = marca
     def verPANTALON(self):
+        print('Pantalones: 👖')
+        time.sleep(2)
         print("Pantalon  {} de la {}, marca {}".format(self.__color, self.__talla, self.__marca))
         print("Talla    : {}".format(self.__talla))
 #------------------------------------------------------------------------------
@@ -62,7 +68,9 @@ class camiseta(ropa):
         self.__genero = genero
 
     def verCAMISA(self):
-        print("Camisa de {} de {}".format(self.__color, self.__marca))
+        print("Camisa: 👔")
+        time.sleep(1)
+        print( "{} de {}".format(self.__color, self.__marca))
         print("Su talla es aprox    : {}".format(self.__talla))
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
@@ -79,6 +87,8 @@ class zapatos(ropa):
         self.__genero = genero
 #------------------------------------------------------------------------------
     def verZAPATOS(self):
+        print("Zapatos: 👞👞👞👞")
+        time.sleep(0.5)
         print("Zapatos color:   {},\nMarca     {}".format(self.__color, self.__marca))
         print("Talla: {}".format(self.__talla))
 
