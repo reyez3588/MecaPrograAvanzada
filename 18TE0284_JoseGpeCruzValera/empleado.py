@@ -12,6 +12,8 @@ class Empleado():
 
     def get_nombre(self):
         return self.__nombre
+    def get_apellido(self):
+        return self.__Apellido
     def entrevista(self):
         print("Hola, mi nombre es {} {} y tengo {} años".format(self.__nombre, self.__apellido, self.__edad))
         print("Mi salario que deseo es {} y mi nivel de ingles es de {}".format(self.__salario, self.__nivel_ingles))

@@ -47,7 +47,7 @@ def main():
     [2] verte al espejo
     [3] conocer empleados(password: 123)
     [4] conocer la empresa
-    [5] Empresar la entrevista
+    [5] Empresar la entrevista(no Retorno)
     [6] Salir\n""")
 
     opcion = int(input("Introduzca una opción: "))
@@ -99,10 +99,10 @@ def main():
         return main()
         #----------------------------------------------------------------------------------------------------------------
     elif opcion == 5:
-        pass
-
+        print('Empresar la entrevista')
+        
         time.sleep(3)
-        return main()
+        exit()
         #----------------------------------------------------------------------------------------------------------------
     elif opcion == 6:
         assets.cargando2()
