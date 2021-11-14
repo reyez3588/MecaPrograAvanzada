@@ -1,3 +1,4 @@
+import Bienvenida as conversacion
 import Gerente as Ceo
 import Empleado as emp
 import Vestimenta as Clothes
@@ -92,15 +93,14 @@ def main():
             return main()
         #----------------------------------------------------------------------------------------------------------------
     elif opcion == 4:
-        pass
-
-
+        conversacion.presentacion()
         time.sleep(3)
         return main()
         #----------------------------------------------------------------------------------------------------------------
     elif opcion == 5:
-        print('Empresar la entrevista')
-        
+        print('Empresar la entrevista\n')
+        conversacion.entrevistaCEO()
+
         time.sleep(3)
         exit()
         #----------------------------------------------------------------------------------------------------------------
