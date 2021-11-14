@@ -8,7 +8,7 @@ class persona():
         self.__pay = float(pay)
         self.__nivel_ingles = str(nivel_ingles)
     try:
-        print('Running...')
+        print('Running...\n\n\n')
     except ValueError:
         print("error datos erroneos")
     except TypeError:
@@ -37,6 +37,17 @@ class Gerente(persona):
         print("mi sueldo es de", self.__pay, "euros")
         print("mi nivel de ingles es", self.__nivel_ingles)
 
+    def contrato(self):
+        print("mi contrato es de", self.__pay, "euros")
+
+    def others(self):
+        pass
+    def getAltura(self):
+        return self.__altura
+
+
+
+#codigo de testeo no descomentar
     # def verVestimenta(self):
         # pantalonGerente = Clothes.pantalon("Gris",'40','LV','Hombre')
         # zapatosGerente = Clothes.zapatos("Negros","27","Flexi","Masculino")
@@ -51,12 +62,3 @@ class Gerente(persona):
         # print()
         # sacoGerente.verSACO()
         # print()
-
-    def contrato(self):
-        print("mi contrato es de", self.__pay, "euros")
-
-    def others(self):
-        pass
-    def getAltura(self):
-        return self.__altura
-
