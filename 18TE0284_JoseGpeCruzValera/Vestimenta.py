@@ -31,7 +31,7 @@ class saco(ropa):
         self.__botones = botones
     def verSACO(self):
         print("Su Saco color {} de talla {}, Marca: {}".format(self.__color, self.__talla, self.__marca))
-        print("Posee {} botone(s) su saco".format(self.__botones))
+        print("Posee {} botone(s) su saco       ".format(self.__botones))
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
 #                            -Pantalon-
@@ -46,7 +46,7 @@ class pantalon(ropa):
         self.__marca = marca
     def verPANTALON(self):
         print("Pantalon  {} de la {}, marca {}".format(self.__color, self.__talla, self.__marca))
-        print("Talla: {}".format(self.__talla))
+        print("Talla    : {}".format(self.__talla))
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
 #                            -CAMISETA-
@@ -63,7 +63,7 @@ class camiseta(ropa):
 
     def verCAMISA(self):
         print("Camisa de {} de {}".format(self.__color, self.__marca))
-        print("Su talla es aprox : {}".format(self.__talla))
+        print("Su talla es aprox    : {}".format(self.__talla))
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
 #                            -Zapatos-
@@ -73,8 +73,13 @@ class zapatos(ropa):
     def __init__(self, color:str, talla:str, marca:str,
                 genero:str="Unisex"):
         super().__init__(color, talla, marca)
+        self.__color = color
+        self.__talla = talla
+        self.__marca = marca
+        self.__genero = genero
+#------------------------------------------------------------------------------
     def verZAPATOS(self):
-        print("Zapatos de {} de {}".format(self.__color, self.__marca))
+        print("Zapatos color:   {},\nMarca     {}".format(self.__color, self.__marca))
         print("Talla: {}".format(self.__talla))
 
 # pantalonGerente = pantalon("Gris",'40','LV','Hombre')

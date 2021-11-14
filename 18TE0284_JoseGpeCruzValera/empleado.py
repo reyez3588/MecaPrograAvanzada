@@ -2,12 +2,12 @@
 #aplicamos encapsulamiento
 #como tambien privado y publico de ciertos argumentos
 class Empleado():
-    def __init__(self, nombre, apellido, edad, salario, nivel_ingles):
+    def __init__(self, nombre, apellido, edad, salario, nEnglish):
         self.__nombre = nombre
         self.__apellido = apellido
         self.__edad = edad
         self.__salario = salario
-        self.__nivel_ingles = nivel_ingles
+        self.__nivel = float(nEnglish)  # nivel de ingles superiores a 70 para aceptar
 
     def get_nombre(self):
         return self.__nombre
