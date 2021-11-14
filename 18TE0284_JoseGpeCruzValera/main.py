@@ -22,7 +22,7 @@ camisetaGerente = Clothes.camiseta('azul','Mediana 34','Lacoste')
 
 # crearemos al emmpleado -------------------------------------------------
 # vestiremos formalmente
-Entrevistado = emp.Empleado(' Ibai Llanos',str(input("Escriba apellidos")),22,15000,(85),1.70)
+Entrevistado = emp.Empleado(' Ibai Llanos','Treviño',22,15000,(85),1.70)
 pantalonEntrevistado = Clothes.pantalon("Gris",'Mediana 32','Oxfort','Hombre')
 camisetaEntrevistado = Clothes.camiseta('Negra','Mediana 32','IDesign')
 zapatosEntrevistado = Clothes.zapatos("Negro","27","Flexi","Masculino")
