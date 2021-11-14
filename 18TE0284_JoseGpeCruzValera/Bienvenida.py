@@ -45,12 +45,14 @@ CEEOO = (
 'Quedas Contratrado Bienvenido a MedioMelon SA de CV')
 
 
+
 Answer = (
 'Ibai',
 'Llanos',
 'Treviño',
 '$8000 mxn mensuales por ser mi primer empleo',
 '123456789',
+'De acuerdo',
 'Ingeniería en Mecatronica',
 'Titulo profesional y estoy tramitanto mi cedula mañana',
 'Puedo ayudar a la empresa con el desarrollo de software de manera eficiente',
@@ -62,6 +64,38 @@ Answer = (
 )
 
 def entrevistaCEO():
+    print('\n')
+    print (CEEOO[0])
     print(Answer[0])
+    print (CEEOO[1])
+    print(Answer[1])
+    print (CEEOO[2])
+    print(Answer[2])
+    print (CEEOO[3])
+    print(Answer[3])
+    print (CEEOO[4])
+    print(Answer[4])
+    print (CEEOO[5])
+    print(Answer[5])
+    print (CEEOO[6])
+    print(Answer[6])
+    print (CEEOO[7])
+    print(Answer[7])
+    print (CEEOO[8])
+    print(Answer[8])
+    print (CEEOO[9])
+    print(Answer[9])
+    print (CEEOO[10])
+    print(Answer[10])
+    print (CEEOO[11])
+    print(Answer[11])
+    print (CEEOO[12])
+    print(Answer[12])
+    print('\n')
+    print (CEEOO[13])
+    print(Answer[13],'😎😁😁')
+    print ('\n\n\n')
 
-entrevistaCEO()
+# entrevistaCEO()
+# presentacion()
+# wellcome()
