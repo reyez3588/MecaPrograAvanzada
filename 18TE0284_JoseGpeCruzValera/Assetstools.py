@@ -31,6 +31,17 @@ def cargandoN(seg):
         print("...")
         time.sleep(1)
 
+def descargar():
+    time.sleep(1)
+    print('Descargado...')
+    time.sleep(3)
+    x= 3
+    for i in range(x):
+        print("...",round((x+i)*(50/3),2),'%')
+        time.sleep(1)
+    print(100,'%')
+    print("Archivo Guardado revisar archivo csv")
+
 
 #testeo de Asssetstools
 # cargando()

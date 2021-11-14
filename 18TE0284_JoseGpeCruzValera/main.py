@@ -4,6 +4,8 @@ import Vestimenta as Clothes
 import time
 import Assetstools as assets
 import Empresa as Company
+
+
 #creamos el objeto CEO -------------------------------------------------
 CEOdEmpresar = Ceo.Gerente('Jose Antonio Ponton',45,39999.99,str(85),1.80)
 pantalonGerente = Clothes.pantalon("Gris",'Mediana 34','LV','Hombre')
@@ -22,6 +24,8 @@ camisetaGerente = Clothes.camiseta('azul','Mediana 34','Lacoste')
 Entrevistado = emp.Empleado(" Ricardo ",'Mendez Allende',22,15000,str(85),1.70)
 pantalonEntrevistado = Clothes.pantalon("Gris",'Mediana 32','Oxfort','Hombre')
 camisetaEntrevistado = Clothes.camiseta('Negra','Mediana 32','IDesign')
+zapatosEntrevistado = Clothes.zapatos("Negro","27","Flexi","Masculino")
+sacoEntrevistado = Clothes.saco('cafe','Mediana','Thenorface','Hombre','Varias telas finas',4)
 
 #----------------------------------------------------------------------------------------------------------------
 
@@ -40,7 +44,7 @@ def main():
     ¿Qué desea hacer?
     [1] conocer el jefe
     [2] verte al espejo
-    [3] conocer el número de empleados
+    [3] conocer el número de empleados(password: 123)
     [4] conocer la empresa
     [5] Empresar la entrevista
     [6] Salir\n""")
@@ -59,18 +63,31 @@ def main():
         # CEO.verVestimenta()
         time.sleep(3)
         return main()
+        try:
+            main()
+        except KeyboardInterrupt:
+            pass
         #-----------------------------------------------------s
     elif opcion == 2:
-        pass
-
+        print("ahora te estas viendo al parecer cumples con los requisitos de entrada")
+        camisetaEntrevistado.verCAMISA()
+        pantalonEntrevistado.verPANTALON()
+        sacoEntrevistado.verSACO()
+        zapatosEntrevistado.verZAPATOS()
         time.sleep(3)
         return main()
         #-----------------------------------------------------
     elif opcion == 3:
-        pass
-
-        time.sleep(3)
-        return main()
+        if input('Introduzca la contraseña: ') == '123':
+            assets.descargar()
+            Company.generar_archivo()
+            time.sleep(3)
+            Company.listaconsulta()
+            return main()
+        else:
+            print('Contraseña incorrecta')
+            time.sleep(3)
+            return main()
         #----------------------------------------------------------------------------------------------------------------
     elif opcion == 4:
         pass
@@ -88,6 +105,7 @@ def main():
     elif opcion == 6:
         assets.cargando2()
         exit()
+
         #----------------------------------------------------------------------------------------------------------------
     else:
         print("\nEsa opción no existe")
