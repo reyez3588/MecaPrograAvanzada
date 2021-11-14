@@ -3,8 +3,6 @@ import Empleado as emp
 import Vestimenta as Clothes
 import time
 import Assetstools as assets
-
-
 #creamos el objeto CEO -------------------------------------------------
 CEOdEmpresar = Ceo.Gerente('Jose Antonio Ponton',45,39999.99,str(85),1.80)
 pantalonGerente = Clothes.pantalon("Gris",'Mediana 34','LV','Hombre')
@@ -16,21 +14,25 @@ camisetaGerente = Clothes.camiseta('azul','Mediana 34','Lacoste')
 #           Camisa
 #               Zapatos
 #                   Saco con los 3 botones
+#--------------------------------------------------------------------------------
+
+# crearemos al emmpleado -------------------------------------------------
+# vestiremos formalmente
+Entrevistado = emp.Empleado(" Ricardo ",'Mendez Allende',22,15000,str(85),1.70)
+
+#----------------------------------------------------------------------------------------------------------------
+
 
 #crearemos el obejeto Secretaria---------------------------------------------------------
 Secretaria = Ceo.persona('Maria Buena Aventura',25,1500.00,'b1',1.65)
 print(""" Hola buenas tardes mi nombre es {} le acabo de enviar un correo de la empresa para su 
     solicitud de empleo, en breves momentos le llegara...""".format(Secretaria.get_name()))
 #----------------------------------------------------------------------------------------------------------------
-
 assets.cargando()
-
 CEOdEmpresar.get_invitacion()
-
 print('Bienvenido al programa de Entrevista de trabajo')
 
 def main():
-    
     print("""\n\n
     ¿Qué desea hacer?
     [1] conocer el jefe
@@ -44,7 +46,8 @@ def main():
 
 
     if opcion == 1:
-        print("\nEl jefe de la empresa es:      {}".format(CEOdEmpresar.get_name()))
+        print('Reconoceras Nuestro CEO con las siguientes caracteristicas comunes')
+        print("\nEl jefe de la empresa es:    {}".format(CEOdEmpresar.get_name()))
         camisetaGerente.verCAMISA()
         pantalonGerente.verPANTALON()
         sacoGerente.verSACO()

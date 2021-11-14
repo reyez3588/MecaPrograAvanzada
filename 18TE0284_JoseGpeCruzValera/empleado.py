@@ -2,9 +2,10 @@
 #aplicamos encapsulamiento
 #como tambien privado y publico de ciertos argumentos
 class Empleado():
-    def __init__(self, nombre, apellido, edad, salario, nEnglish):
-        self.__nombre = nombre
+    def __init__(self, nombre, apellido, edad, salario, nEnglish,altura):
+        self.__altura = altura
         self.__apellido = apellido
+        self.__nombre = nombre
         self.__edad = edad
         self.__salario = salario
         self.__nivel = float(nEnglish)  # nivel de ingles superiores a 70 para aceptar
