@@ -3,6 +3,7 @@ import Empleado as emp
 import Vestimenta as Clothes
 import time
 import Assetstools as assets
+import Empresa as Company
 #creamos el objeto CEO -------------------------------------------------
 CEOdEmpresar = Ceo.Gerente('Jose Antonio Ponton',45,39999.99,str(85),1.80)
 pantalonGerente = Clothes.pantalon("Gris",'Mediana 34','LV','Hombre')
