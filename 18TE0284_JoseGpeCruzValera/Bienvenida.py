@@ -1,4 +1,4 @@
-import Empleado as emp
+import empleado as emp
 import time
 def presentacion():
     print ("Bienvenido al programa de empleados")
@@ -124,6 +124,6 @@ def entrevistaCEO():
     time.sleep(1)
     print ('\n\n\n')
 
-entrevistaCEO()
+# entrevistaCEO()
 # presentacion()
 # wellcome()

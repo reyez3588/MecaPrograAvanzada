@@ -1,6 +1,6 @@
 import Bienvenida as conversacion
 import Gerente as Ceo
-import Empleado as emp
+import empleado as emp
 import Vestimenta as Clothes
 import time
 import Assetstools as assets
